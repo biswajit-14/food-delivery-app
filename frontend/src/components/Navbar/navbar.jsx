@@ -1,6 +1,7 @@
 import "./navbar.css";
 import { assets } from "../../assets/assets";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   { key: "home", label: "home" },
@@ -23,7 +24,11 @@ const Navbar = () => {
             onClick={() => setMenu(item.key)}
             className={menu === item.key ? "active" : ""}
           >
-            {item.label}
+            {item.key === "home" ? (
+              <Link to="/">home</Link>
+            ) : (
+              <a href={`#${item.key}`}>{item.label}</a>
+            )}
           </li>
         ))}
       </ul>

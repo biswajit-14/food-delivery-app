@@ -3,7 +3,7 @@ import "./app-download.css";
 
 const AppDownload = () => {
   return (
-    <div className="app-download" id="app-download">
+    <div className="app-download" id="mobile-app">
       <p>
         For Better Experience Download <br /> Tomato App{" "}
       </p>
