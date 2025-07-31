@@ -2,9 +2,6 @@
   margin-top: 100px;
 }
 
-.cart-items {
-}
-
 .cart-items-title {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
@@ -107,4 +104,18 @@
   .cart-promocode {
     justify-content: start;
   }
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #888;
+}
+.empty-cart-image {
+  margin-bottom: 20px;
+  width: 180px;
+  opacity: 0.9;
 }
